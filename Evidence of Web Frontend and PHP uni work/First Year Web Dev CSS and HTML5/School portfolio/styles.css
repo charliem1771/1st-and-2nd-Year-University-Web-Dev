@@ -1,0 +1,304 @@
+
+body,header,nav,footer,article,section,aside,ul,
+{
+    padding: 0px; 
+    margin: 0px; 
+}
+
+body
+{
+    background-color:rgba(80,80,80,0.45);/*creates a grey background*/
+}
+
+li
+{
+    float: left;
+    list-style: none;/*removes styling from the list e.g. bullet points*/
+}
+
+li a
+{
+    color:#C0C0C0; /*Creates a slate grey like color for the header*/
+    text-align: center;/*makes sure the text is properly aligned*/
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: 30px;
+    list-style-type: inline;/*keeps the text inline*/
+}
+header 
+{
+    color:white;
+    display: block;
+    background-color: #424242; /*creates a grey colour for the background header*/
+    padding-bottom: 15px;
+    overflow: hidden; /*set overflow to hidden so the nav will take the top of the page*/
+}
+
+li a:hover /*makes the nav bar links more obvious when hovering over them*/
+{ 
+    color:white;
+}
+
+footer /*Used for content which is locked to the bottom of the page*/
+{
+   position: fixed;
+   bottom: 0; /*sets footer to the bottom*/
+   overflow: hidden;
+   padding-left:0 ;/*keeps the footer aligned to the left*/
+   background-color: #424242;
+   color: #C0C0C0;
+   text-align: left;
+   margin-bottom: 10px;/*Keeps the footer from being 100% at the bottom of the page*/
+   padding: 15px; 
+   width: 97.5%;
+}
+
+section 
+{
+	margin-top: -400px;
+	margin-left: 500px;
+}
+
+p1 /*I created this tag to specify between paragraphs and reduce errors*/
+{
+	color: #C0C0C0;
+}
+
+
+.aF:hover /*makes the link's in the footer more readable, the aF tag was created because the anchor tag is in use for the header and it was causing bugs*/
+{
+	color: white;
+}
+
+p a /*sets the footer links to the same color as the header*/
+{
+	color: #C0C0C0;
+}
+
+#article1,#article2,#article3,#article4,#article5,#article6 /*contains the majority of the page content*/
+{
+	color: white; /*makes the text white*/
+	float: left; 
+	width: 30%; 
+	height: 250px;
+	font-size: 25px;
+}
+
+img /*conrtrols the img on page 1*/
+{
+	width: 80%;
+}
+
+#pgimgs /*the tag specifices that on all other pages the images will start with aiwtdh of 25%*/
+{
+	width: 25%;
+	margin-top:10px;
+}
+
+#container /*contains all of the content beneath the nav bar and does not go below the footer*/
+{
+	padding: 0px;
+	margin: 0 auto;
+	width: 90%;
+	height: auto; 
+}
+
+
+@media (max-width: 2500px) 
+{
+	#article1
+	{
+		margin-left: 500px;
+		padding-bottom: 600px; /*adds padding to the botton of the page so the footer never covers content*/
+	}
+	section
+	{
+		margin-left: 500px;
+		margin-top: -480px;
+	}
+	
+	/*this is a secondary article tag list because of the change in page layout between the index and the other pages.I wanted different responsiveness for the other pages so I had to seperate it from the original article ID to avoid text overlap*/
+	#article2,#article3
+	{
+		font-size: 24px;
+		margin-left: 160px;
+		width: 30%;
+	}
+	
+	#article4,#article5,#article6 /*i seperated them to allow for more control over the the evalution page*/
+	{
+		font-size: 24px;
+		margin-left: 120px;
+		width: 20%;
+		padding-bottom: 800px;
+
+	}
+}
+
+@media (max-width : 1250px)
+{
+	#article1
+	{
+		margin-left: 300px;
+	}
+	footer
+	{
+		width: 95%;
+	}
+	section
+	{
+		margin-left: 340px;
+		margin-top: -350px;/*doing minus to move the table up*/
+	}
+	
+	#pgimgs 
+	{
+		width: 30%; /*adjusting the image width with the page*/
+	}
+	
+	#article2,#article3
+	{
+		font-size: 20px;/*changes font size*/
+		margin-left:110px;
+		width: 30%;
+	}
+	
+	#article4,#article5,#article6
+	{
+		font-size: 20px;
+		margin-left: 160px;
+		width: 20%;
+	}
+}
+
+@media (max-width : 900px)
+{
+	#article1
+	{
+		margin-left: 30px;
+		padding-bottom: 0px;
+	}
+
+	footer
+	{
+		width: 95%;
+	}
+	section
+	{
+		float:left;
+		margin-left: 300px;
+		margin-top: -500px;
+	}
+	#article2,#article3
+	{
+		font-size: 20px;
+		margin-left: 50px;
+		width: 40%;
+		float: left;
+	}
+	
+	#article4,#article5,#article6
+	{
+		font-size: 20px;
+		margin-left: 160px;
+		width: 40%;
+	}
+	
+	li a 
+	{
+		font-size: 25px;
+	}
+	
+	footer
+	{
+		font-size: 15px;
+	}
+}
+
+@media (max-width : 800px)
+{
+	#article1
+	{
+		width: 40%;/*makes it responsive*/
+		font-size: 25px;/*changes font size*/
+		margin-left: 50px;/*moves in leftwards*/
+	}
+	#article2,#article3
+	{
+		width: 40%;/*makes it responsive*/
+		font-size: 20px;/*changes font size*/
+		margin-left: 25px;
+		float: left;
+	}
+	
+	#article4,#article5,#article6
+	{
+		font-size: 20px;
+		margin-left: 160px;
+		width: 40%;
+	}
+	footer
+	{
+		width: 93%;/*controls the footers repsonsivity*/
+	}
+	section
+	{
+		margin-left: 250px;
+		margin-bottom: 210px;
+	}
+	
+	li a 
+	{
+		font-size: 25px;
+	}
+	
+	footer
+	{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 460px)
+{
+	#article1
+	{
+		width: 40%;
+		font-size: 15px;
+		margin-left: 50px;
+	}
+	#article2,#article3
+	{
+		width: 80%;
+		font-size: 10px;
+		margin-left: 12px;
+		margin-bottom: 105px;
+		float : left;
+	}
+	
+	#article4,#article5,#article6
+	{
+		width: 50%;
+		font-size: 12px;
+		margin-left: 15px;
+	}
+	
+	footer
+	{
+		width: 85%; 
+	}
+	
+	section
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	
+	li a 
+	{
+		font-size: 22px;
+	}
+	footer
+	{
+		font-size: 10px;
+	}
+}

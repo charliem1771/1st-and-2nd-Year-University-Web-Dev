@@ -1,0 +1,17 @@
+{
+  "name": "nodefileserver",
+  "version": "1.0.0",
+  "description": "This is a node file server it uses a node.js server to launch html files and stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Webserver"
+  ],
+  "author": "Charlie Moorcroft",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,53 @@
+<!-- I have taken the markup from the index so I don't have to rewrite all of the nav bar and footer -->
+<!DOCTYPE html> <!-- makes the type of document being typed html -->
+<html lang="en"> <!-- opens the tag for the HTML content and sets the language to english -->
+<title>My Portfolio</title>
+  <head> <!-- contains the links and meta tags -->
+	<link a  rel = "stylesheet" href="styles.css" type="text/css"> <!--links the stylesheet-->
+    <meta charset="utf-8"/> <!-- sets the character tag -->
+	<meta name = "viewport" content = "width=device-width,initial-scale = 1 user-scalable=yes"> <!--helps with scalabity on mobile device-->
+  </head>
+  <body> <!--Tag for the body, eg the majority of the content -->
+      <header> <!-- tag for the header where the main title and navbar are stored -->
+          <nav> <!-- handles the navbar containment -->
+              <ul> <!-- creates a unordered list which can be styled into a navbar -->
+                  <li><a href = "index.html">About Me</a></li> <!-- The HTML which is styled for the navbar-->
+                  <li><a href = "pg2.html">Web-Development & Programming<a/></i>
+                  <li><a href = "pg3.html">CSF & Database-Information Systems<a/></li>
+                  <li><a href = "pg4.html">Self Evaluation<a/></li>
+              </ul>
+          </nav>
+      </header>
+  <div = "container"> <!-- where all the sites content is stored from the header to the footer -->
+		<article id = "article2"> <!-- the tag allows the article to be resizable and adds repsonsitivity -->
+		<h1><strong>Charlie Moorcroft</strong></h1>
+			<h2><strong>Computer Systems fundamentals</strong></h2>
+				<p>
+					Throughout the Computer System Fundamentals Unit or CSF you learn about discrete mathematics boolean algebra and assembly
+					langauge programming. So far we have covered the algebra of sets and boolean algebra, I have very little expierenc in this area
+					I would say it is my weak point. I am aiming to pass the upcoming CSF logic test to the best my ability, yet I do have doubts
+					of how capable I am.
+				</p>
+				<!-- added a tag here to allow for a independdent image size since the normal img tag is manipulated in page 1 and I want it to be different on page2 -->				
+				<img id = "pgimgs"src = "logisimlogo.jpg" alt = "The logo of logisim">
+				<img id = "pgimgs"src = "WQF3jbr.jpg" alt = "A diagram of the ALU"> 
+				<img id = "pgimgs"src = "Mips.jpg" alt = "A image of assembly loaded up in the MARS mips complier"> 
+		</article>
+		<article id = "article3"> <!-- allows for a clear distinction between the two articles allowing both to be repososnive on the page -->
+			<h2><strong>Information Systems</strong></h2>
+				<p>	
+					Throughpout the information systems unit we cover database design and management the sofwtare developmnent lifecycle and query
+					langauges eg SQL. Even though I have had very little expierence in this are previously I am very confident that my group performed
+					well in the initial assignment and as I normally do I am striving for the best grade I can achieve in this assignment.</p>
+				<img id = "pgimgs" src = "Piazza_logo.jpg" alt = "The logo of piazza">
+				<img id = "pgimgs" src = "vplogo_300.jpg" alt = "The visual paradigm logo">
+				<img id = "pgimgs" src = "ISOne.jpg" alt = "A image of some of my information systems work">
+		</article>
+  </div>
+	  <footer id =  "p1"> <!-- contains the websites footer, I am using a tag to be more specific when hovering to avoid bugs -->
+		  <P>Developed at <a href = "http://www2.mmu.ac.uk/" class = "aF">Manchester Metropolitan University</a> <!-- added a tag to the anchor since I am already calling the anchors header and it was causing bugs -->
+		   A<a href = "http://www.cburch.com/logisim/" class = "aF"> link to the github</a> for logisim.
+		   A <a href = "https://piazza.com/" class = "aF">link to piazza.</a></P>  
+	  </footer>
+  </body>
+</html>

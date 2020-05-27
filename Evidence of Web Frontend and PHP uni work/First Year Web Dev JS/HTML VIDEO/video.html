@@ -1,0 +1,46 @@
+<!doctypye html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>MMU Video</title>
+			<script src = "videoplayer.js"></script>
+        </head>
+
+        <body>
+            <header>
+                <h1>Charlie Moorcroft 17090875 </h1>
+            </header>
+
+            <section id = "videoContainer"> <!--Creating the container for the video -->
+                <video width = "600" height = "auto" poster = "MMU-New-Logo-block_BW.jpg">  <!-- Declaring the vidoe element and giving it a height width and a poster -->
+                    <source src = "MMU.mp4"> <!--Getting the vidoe as .mp4 the standard for chrome -->
+                    <source src = "MMU.webm"> <!--Getting the standard as .webm the standard for firefox -->
+                    <p>
+						Your browser does not support html5 video you can 
+                        download the video at <a href "video/mp4/MMU.mp4">here</a>instead. <!-- displays the source file if the video failed to load -->
+					</p>
+                </video>
+				<div>
+					<button type ="button" id = "Mute">unMuted</button> <!-- Creates a button which says unMuted -->
+					<button type ="button" id = "Play">Play</button> <!-- Creates a button which says Play -->
+					<button type ="button" id = "Stop">Stopped</button> <!-- Creates a button which says stop -->
+					<input type = "range" id="seekBar" min = 0 max = 100 step = 1 value = 0> <!-- Creats a slider bar which will be used for scrubbing through the video -->
+					<input type = "range" id="volumeBar" min = 0 max = 100 step = 1 value = 0> <!-- Creats a slider which will be used for changing the volume -->
+					<input type = "text" readonly value = "00:00" id = "durationField" size = "4"> <!-- Creates a readonly text box to display the duration time -->
+					<input type = "text" readonly value = "00:00" id = "currentPlayBack" size = "4"> <!-- Creates a readonly text box to display the time of the current playback-->
+					<select id = "speeds"> <!-- Creates a select menu for speeds -->
+						<option value = "2">2x</option> <!-- Below are a series of selectable values for the speed change menu -->
+						<option value =  "1.75">1.75x</option>
+						<option value =  "1.5">1.5x</option>
+						<option value =  "1.25">1.25x</option>
+						<option value =  "1" selected>1x</option>
+						<option value =  "0.75">0.75x</option>
+						<option value =  "0.5">0.5x</option>
+					</select>
+					<button type ="button" id = "fastForwardBtn">></button> <!-- creates a button which will have the fastforward symbol on it -->
+				</div>
+            </section>
+			
+			
+        </body>
+    </html>

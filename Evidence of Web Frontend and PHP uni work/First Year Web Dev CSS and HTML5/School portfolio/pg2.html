@@ -1,0 +1,57 @@
+<!-- I have taken the markup from the index so I don't have to rewrite all of the nav bar and footer -->
+<!DOCTYPE html> <!-- makes the type of document being typed html -->
+<html lang="en"> <!-- opens the tag for the HTML content and sets the language to english -->
+<title>My Portfolio</title>
+  <head> <!-- contains the links and meta tags -->
+	<link a  rel = "stylesheet" href="styles.css" type="text/css"> <!--links the stylesheet-->
+    <meta charset="utf-8"/> <!-- sets the character tag -->
+	<meta name = "viewport" content = "width=device-width,initial-scale = 1 user-scalable=yes"> <!--helps with scalabity on mobile device-->
+  </head>
+  <body> <!--Tag for the body, eg the majority of the content -->
+      <header> <!-- tag for the header where the main title and navbar are stored -->
+          <nav> <!-- handles the navbar containment -->
+              <ul> <!-- creates a unordered list which can be styled into a navbar -->
+                  <li><a href = "index.html">About Me</a></li> <!-- The HTML which is styled for the navbar-->
+                  <li><a href = "pg2.html">Web-Development & Programming<a/></i>
+                  <li><a href = "pg3.html">CSF & Database-Information Systems<a/></li>
+                  <li><a href = "pg4.html">Self Evaluation<a/></li>
+              </ul>
+          </nav>
+      </header>
+  <div = "container"> <!-- where all the sites content is stored from the header to the footer -->
+		<article id = "article2"> <!-- the tag allows the article to be resizable and adds repsonsitivity -->
+		<h1><strong>Charlie Moorcroft</strong></h1>
+			<h2><strong>Programming</strong></h2>
+				<p>
+					Throughout the programming unit at MMU you are taught how to write code primarily in Java, using the IDE's eclipse and processing.
+					The course is designed to serve as a introduction to programming and train you to properly utilise the most important tools in software
+					engineering. Even though the course is very informative It has been more of a referesher then anything else so far, which has primarily imporved my logical thinking. 
+					This is because I have had a lot of expierence writing code before I came to MMU, I believe my expierence working at Lucid-Games
+					on professional standard code for video games will help me a lot throughout this unit. So far I would say I am doing quite well in the progr
+					aming unit and I am aiming for the highest possible grade on the upcoming MCQ test.
+					
+				</p>
+				<img id = "pgimgs" src = "Processing_3_Logo.jpg" alt = "The logo of the processing IDE"> <!-- added a tag here to allow for a independent image size since the normal img tag is manipulated in page 1 and I want it to be different on other pages -->
+				<img id = "pgimgs" src = "eclipse-logo-152730.jpg" alt = "The logo of eclipse">
+				<img id = "pgimgs" src = "ProcessingThing.jpg" alt = "A bunch of java in the processing IDE">
+		</article>
+		<article id = "article3"> <!-- allows for a clear distinction between the two articles allowing both to be repososnive on the page -->
+			<h2><strong>Web-Development</strong></h2>
+				<p>
+					Throughout the Web-Development unit you learn about CSS3,HTML5,Javascript and PHP and you are taught the basics of front 
+					back end Web-Development. So far in the unit we have been taught about CSS and HTML5 along with how to use them for responsive
+					and accessible websites. In the past I have created websites using HTML5 and CSS3 and I believe that has helped. I believe so 
+					far I am doing Ok in the Unit and I am striving for a high grade on the first assignment.
+				</p>
+				<img id = "pgimgs" src = "notepad++.jpg" alt = "The logo of notepad++"><!--the pgimgs tag is applied to every image outisde of the index to allow for them to have different page sizes-->
+				<img id = "pgimgs" src = "HTML5_Logo_512.jpg" alt = "The HTML5 logo">
+				<img id = "pgimgs" src = "CSS.jpg" alt = "A image of CSS in notpad++">
+		</article>
+  </div>
+	  <footer id =  "p1"> <!-- contains the websites footer -->
+		  <P>Developed at <a href = "http://www2.mmu.ac.uk/" class = "aF">Manchester Metropolitan University</a> <!-- added a tag to the anchor since I am already calling the anchors header and it was causing bugs -->
+		   A<a href = "https://processing.org/" class = "aF"> link to the processing </a> website which developed the IDE I have primarily used at MMU so far.
+		   A <a href = "https://notepad-plus-plus.org/" class = "aF">link to notepad++</a> the sofwtare most used in Web Development so far</P>  
+	  </footer>
+  </body>
+</html>
